@@ -29,7 +29,7 @@ public class DefaultUserResponsibilityTest {
     SUser user = Mockito.mock(SUser.class);
     Responsibility responsibility = new DefaultUserResponsibility(user);
 
-    assertFalse(responsibility.getDescription().contains("default"));
+    assertTrue(responsibility.getDescription().contains("default"));
    
   }
 }
